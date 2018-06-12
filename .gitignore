@@ -1,0 +1,41 @@
+*/target/*
+*.settings
+/bin
+/build
+.cache-main
+.DS_Store
+.classpath
+.project
+.gradle
+/main
+/metastore_db
+/gradle
+out/
+
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# all .idea files
+.idea/**
+*.iml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+gradlew*
+
+
+
+

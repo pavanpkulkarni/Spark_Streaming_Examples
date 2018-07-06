@@ -1,7 +1,7 @@
 package com.pavanpkulkarni.sparkstreaming
 
 
-import org.apache.spark.sql.{SparkSession}
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types.{StringType, StructField, StructType}
 
 
@@ -48,13 +48,13 @@ object FileToFileStreaming{
 			.queryName("count_customer")
 			//.format("console")
 			.outputMode("append")
-  		.format("parquet")
-  		.partitionBy("date")
-  		.option("path", "src/main/resources/output/")
+      .format("json")
+      .partitionBy("date")
+      .option("path", "src/main/resources/output/")
 			.option("checkpointLocation", "src/main/resources/chkpoint_dir")
 			.start()
 
-		query.awaitTermination(10000)
+		query.awaitTermination()
 	}
 }
 

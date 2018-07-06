@@ -48,9 +48,9 @@ object FileToFileStreaming{
 			.queryName("count_customer")
 			//.format("console")
 			.outputMode("append")
-                        .format("json")
-                        .partitionBy("date")
-                        .option("path", "src/main/resources/output/")
+			.format("json")
+			.partitionBy("date")
+			.option("path", "src/main/resources/output/")
 			.option("checkpointLocation", "src/main/resources/chkpoint_dir")
 			.start()
 

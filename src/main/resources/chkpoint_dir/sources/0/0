@@ -1,0 +1,6 @@
+v1
+{"path":"file:///Users/pavanpkulkarni/Documents/workspace/Spark_Streaming_Examples/src/main/resources/input/orders/date=2018-06-01/data.csv","timestamp":1528817388000,"batchId":0}
+{"path":"file:///Users/pavanpkulkarni/Documents/workspace/Spark_Streaming_Examples/src/main/resources/input/orders/date=2018-06-02/data.csv","timestamp":1528817405000,"batchId":0}
+{"path":"file:///Users/pavanpkulkarni/Documents/workspace/Spark_Streaming_Examples/src/main/resources/input/orders/date=2018-06-04/data.csv","timestamp":1528818840000,"batchId":0}
+{"path":"file:///Users/pavanpkulkarni/Documents/workspace/Spark_Streaming_Examples/src/main/resources/input/orders/date=2018-06-03/data.csv","timestamp":1528819027000,"batchId":0}
+{"path":"file:///Users/pavanpkulkarni/Documents/workspace/Spark_Streaming_Examples/src/main/resources/input/orders/date=2018-06-05/data.csv","timestamp":1528822838000,"batchId":0}

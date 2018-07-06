@@ -1,0 +1,6 @@
+{"customer_id":"1","pid":"011","pname":"p11","customer_name":"kash","customer_location":"VT"}
+{"customer_id":"2","pid":"012","pname":"p12","customer_name":"pavan","customer_location":"IL"}
+{"customer_id":"1","pid":"012","pname":"p12","customer_name":"kash","customer_location":"VT"}
+{"customer_id":"2","pid":"023","pname":"p23","customer_name":"pavan","customer_location":"IL"}
+{"customer_id":"2","pid":"034","pname":"p34","customer_name":"pavan","customer_location":"IL"}
+{"customer_id":"3","pid":"034","pname":"p34","customer_name":"john","customer_location":"CA"}

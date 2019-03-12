@@ -1,0 +1,65 @@
+
+
+
+apply plugin: 'scala'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+apply plugin: 'idea'
+
+version = '1.0'
+
+sourceCompatibility = 1.8
+
+targetCompatibility = 1.8
+
+repositories {
+
+	mavenCentral()
+
+}
+
+configurations {
+
+	provided
+	compile.extendsFrom provided
+
+}
+
+dependencies{
+
+	provided 'org.apache.spark:spark-core_2.11:2.3.1'
+	provided 'org.apache.spark:spark-sql_2.11:2.3.1'
+	provided 'org.apache.spark:spark-catalyst_2.11:2.3.1'
+
+}
+
+jar {
+
+	zip64 true
+
+	baseName = project.name
+
+	dependsOn configurations.runtime
+
+	from {
+
+		(configurations.runtime - configurations.provided).collect {
+
+		it.isDirectory() ? it : zipTree(it)
+
+	}
+
+} {
+
+exclude "META-INF/*.SF"
+
+exclude "META-INF/*.DSA"
+
+exclude "META-INF/*.RSA"
+
+}
+
+}
+group 'SparkStream_GID'
+version '1.0'
+
